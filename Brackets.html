@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    
+    
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>MJ-CW</title>
+
+ <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  
+	<link rel="stylesheet" type="text/css" href="./css/common.css">
+
+
+
+
+</head>
+<body>
+
+
+
+<nav class="navbar navbar-expand-md bg-light navbar-light">
+  <!-- Brand -->
+    <a class="navbar-brand" href="#">
+    <img src="./images/full_logo.svg" alt="logo" style="width:100px;">
+  	</a>
+	<h5>NEUTRAL DRAGON TOURNAMENT</h5>
+  <!-- Toggler/collapsibe Button -->
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <!-- Navbar links -->
+  <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="index.html">HOME</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="Brackets.html">FIXTURE</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="dual.html">DUEL</a>
+      </li>
+      
+        <li class="nav-item">
+        <a class="nav-link" href="#">RESULT</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<h2 class="title"> Brackets </h2>
+
+<div class="wrapper">
+
+    <div class="brackets stylebr">
+    </div>
+
+</div>
+
+
+
+<script src="js/jquery-1.11.3.js"></script>
+<script src="js/brackets.min.js"></script>
+
+<script>
+
+    var rounds;
+
+    rounds = [
+
+
+        //-- ronda 1
+        [
+
+            {
+                player1: { name: "Player 111", winner: true, ID: 111 },
+                player2: { name: "Player 211", ID: 211 }
+            },
+
+            {
+                player1: { name: "Player 112", winner: true, ID: 112 },
+                player2: { name: "Player 212", ID: 212 }
+            },
+
+            {
+                player1: { name: "Player 113", winner: true, ID: 113 },
+                player2: { name: "Player 213", ID: 213 }
+            },
+
+            {
+                player1: { name: "Player 114", winner: true, ID: 114 },
+                player2: { name: "Player 214", ID: 214 }
+            },
+
+            {
+                player1: { name: "Player 115", winner: true, ID: 115 },
+                player2: { name: "Player 215", ID: 215 }
+            },
+
+            {
+                player1: { name: "Player 116", winner: true, ID: 116 },
+                player2: { name: "Player 216", ID: 216 }
+            },
+
+            {
+                player1: { name: "Player 117", winner: true, ID: 117 },
+                player2: { name: "Player 217", ID: 217 }
+            },
+
+            {
+                player1: { name: "Player 118", winner: true, ID: 118 },
+                player2: { name: "Player 218", ID: 218 }
+            },
+        ],
+
+        //-- ronda 2
+        [
+
+            {
+                player1: { name: "Player 111", winner: true, ID: 111 },
+                player2: { name: "Player 212", ID: 212 }
+            },
+
+            {
+                player1: { name: "Player 113", winner: true, ID: 113 },
+                player2: { name: "Player 214", ID: 214 }
+            },
+
+            {
+                player1: { name: "Player 115", winner: true, ID: 115 },
+                player2: { name: "Player 216", ID: 216 }
+            },
+
+            {
+                player1: { name: "Player 117", winner: true, ID: 117 },
+                player2: { name: "Player 218", ID: 218 }
+            },
+        ],
+
+        //-- ronda 3
+        [
+
+            {
+                player1: { name: "Player 111", winner: true, ID: 111 },
+                player2: { name: "Player 113", ID: 113 }
+            },
+
+            {
+                player1: { name: "Player 115", winner: true, ID: 115 },
+                player2: { name: "Player 218", ID: 218 }
+            },
+        ],
+
+        //-- ronda 4
+        [
+
+            {
+                player1: { name: "Player 113", winner: true, ID: 113 },
+                player2: { name: "Player 218", winner: true, ID: 218 },
+            },
+        ],
+        //-- Champion
+        [
+
+            {
+                player1: { name: "Player 113", winner: true, ID: 113 },
+            },
+        ],
+
+    ];
+
+    var titles = ['Round 1', 'Round 2', 'Round 3', 'Round 4', 'Round 5'];
+
+
+    ;(function($){
+
+        $(".brackets").brackets({
+            titles: titles,
+            rounds: rounds,
+            color_title: 'black',
+            border_color: 'black',
+            color_player: 'black',
+            bg_player: 'white',
+            color_player_hover: 'black',
+            bg_player_hover: 'yellow',
+            border_radius_player: '5px',
+            border_radius_lines: '5px',
+            
+        });
+
+    })(jQuery);
+</script>
+
+
+
+
+</body>
+</html>
