@@ -96,3 +96,9 @@ margin-top: 10px;
 	display: table;
 	clear: both;
 }  */
+
+.stylebr
+{
+	padding-left: 40px;
+	font-family: 'Righteous', cursive;
+}
